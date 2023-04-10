@@ -9,8 +9,17 @@ export const Container = styled('div', {
 })
 
 export const Header = styled('header', {
-  padding: '2 rem 0',
+  padding: '2rem 0',
   width: '100%',
   maxWidth: 1180,
   margin: '0 auto',
+  display: "flex",
+})
+
+export const TextContainer = styled('div', {
+  display: 'flex',
+  marginLeft: 24,
+  justifyContent: 'center',
+  alignItems: 'center',
+  flexDirection: 'column',
 })
