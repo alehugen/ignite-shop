@@ -29,6 +29,7 @@ export const Product = styled('a', {
     left: '0.25rem',
     right: '0.25rem',
     padding: '2rem',
+    color: '$gray100',
 
     borderRadius: 6,
 
@@ -59,5 +60,5 @@ export const Product = styled('a', {
       transform: 'translateY(0%)',
       opacity: 1,
     }
-  }
+  },
 });
