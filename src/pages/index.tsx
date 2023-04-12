@@ -6,6 +6,7 @@ import { GetStaticProps } from "next"
 import Image from "next/image"
 import Link from 'next/link'
 import Stripe from "stripe";
+import Head from 'next/head';
 
 interface HomeProps {
   products: {
@@ -25,6 +26,10 @@ export default function Home({ products }: HomeProps) {
   });
 
   return (
+    <>
+    <Head>
+      <title>Ignite SHOP</title>
+    </Head>
     <HomeContainer ref={sliderRef} className="keen-slider">
       {products.map(product => {
         return (
@@ -40,6 +45,7 @@ export default function Home({ products }: HomeProps) {
         )
       })}
     </HomeContainer>
+    </>
   )
 }
 
